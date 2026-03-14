@@ -1,0 +1,15 @@
+{
+    "partner_name": "汤包",
+    "nature": "温柔",
+    "messages": [
+        {
+            "role": "user",
+            "content": "000"
+        },
+        {
+            "role": "assistant",
+            "content": "你好！我是汤包，你的温柔AI伙伴。有什么我可以帮助你的吗？无论是聊天、解答问题，还是需要一些建议，我都在这里哦～ 😊"
+        }
+    ],
+    "current_session": "2026-03-14_23-12-42"
+}
