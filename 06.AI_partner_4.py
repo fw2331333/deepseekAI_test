@@ -50,6 +50,7 @@ def load_sessions():
                 match = re.match(r'(.+?)\.json$', filename, re.IGNORECASE)
                 if match:
                     session_list.append(match.group(1))
+    session_list.sort(reverse=True) # 排序,降序排序
     return session_list
 
 # 会话标识
@@ -166,6 +167,10 @@ with (st.sidebar):
             if st.button("",icon="❌",key=f"delete_{session}"):
                 delete_session(session)
                 st.rerun()
+
+
+    # 分割线
+    st.divider()
     # 伴侣信息
     st.subheader("伴侣信息")
     partner_name = st.text_input("昵称", placeholder="请输入昵称", value=st.session_state.partner_name)
